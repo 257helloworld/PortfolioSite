@@ -1,0 +1,63 @@
+.profileCardContainer {
+  flex: 1;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: end;
+  position: fixed;
+}
+
+.profileCard {
+  margin-right: 50px;
+  max-width: 75%;
+}
+
+.profileCircle img {
+  overflow: hidden;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.profileHeader {
+  margin: 20px 0px;
+  color: var(--color-font);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.profileHeader :nth-child(2) {
+  font-size: 1.8rem;
+}
+
+.highlight {
+  color: var(--color-focus);
+}
+
+.profileCard .description {
+  color: var(--color-font);
+  line-height: 1.7;
+}
+
+.ctaButton {
+  color: var(--color-focus);
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: var(--card-shadow);
+}
+
+.buttonsContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
+  grid-column-gap: 15px;
+}
+
+.socialIcon {
+  color: var(--color-font);
+  cursor: pointer;
+  height: 25px;
+}

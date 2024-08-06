@@ -1,0 +1,36 @@
+.projectContainer {
+  display: flex;
+}
+
+.projectIcon {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.projectTitle {
+  font-size: 18px !important;
+}
+
+.technologies {
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-template-columns: auto; */
+  gap: 10px;
+  width: 100px;
+  background-color: rebeccapurple;
+  /* grid-template-columns: repeat(auto-fill, minmax(min-fit, 1fr)); */
+}
+
+.technologies span {
+  color: white;
+}
+.MuiChip-root {
+  width: fit-content;
+}
+
+.githubIcon {
+  margin-left: 15px;
+  cursor: pointer;
+}

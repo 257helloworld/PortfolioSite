@@ -1,0 +1,30 @@
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  row-gap: 15px;
+  /* column-gap: 5px; */
+}
+
+.skillIconContainer {
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.skillIconContainer:hover {
+  transition: background-color 500ms ease-in-out;
+  /* border: 2px solid var(--color-focus); */
+  background-color: rgb(10, 10, 10);
+}
+
+.skillName {
+  font-size: 14px;
+  font-weight: normal;
+}
