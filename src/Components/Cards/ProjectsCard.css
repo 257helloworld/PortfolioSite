@@ -14,23 +14,27 @@
 }
 
 .technologies {
-  display: grid;
-  grid-auto-flow: column;
-  /* grid-template-columns: auto; */
-  gap: 10px;
-  width: 100px;
-  background-color: rebeccapurple;
-  /* grid-template-columns: repeat(auto-fill, minmax(min-fit, 1fr)); */
 }
 
 .technologies span {
   color: white;
 }
 .MuiChip-root {
-  width: fit-content;
+  margin-bottom: 12px;
+  margin-right: 5px;
 }
 
 .githubIcon {
   margin-left: 15px;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .projectContainer {
+    flex-direction: column;
+  }
+
+  .projectTitle {
+    margin-top: 25px;
+  }
 }

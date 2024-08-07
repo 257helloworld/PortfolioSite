@@ -15,3 +15,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+@media (max-width: 900px) {
+  .App {
+    padding: 0 20px;
+  }
+  .section {
+    flex-direction: column;
+  }
+}

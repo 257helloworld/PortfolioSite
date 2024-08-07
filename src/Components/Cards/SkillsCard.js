@@ -52,7 +52,7 @@ function SkillsCard() {
   return (
     <div className="content card">
       <p>My Skills</p>
-      <div className="skillsContainer mt-8">
+      <div className="skillsContainer mt-5">
         {skills.map((skill, index) => (
           <>
             <Tooltip title={skill.name} placement="top">

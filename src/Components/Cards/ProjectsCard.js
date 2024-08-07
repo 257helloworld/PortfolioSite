@@ -15,7 +15,6 @@ function ProjectsCard() {
         "Flask",
         "Firebase Firestore",
         "Google Maps API",
-        "New Long Tech",
         "Figma",
       ],
       icon: "/codrive_logo.png",
