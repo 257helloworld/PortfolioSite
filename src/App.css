@@ -4,10 +4,10 @@
 }
 body {
   background-attachment: fixed;
-  background-color:hsla(311,0%,5%,1);
+  background-color:hsla(0,0%,9%,1);
 background-image:
-radial-gradient(at 100% 0%, hsla(64,30%,18%,1) 0px, transparent 20%),
-radial-gradient(at 38% 80%, hsla(60,31%,5%,1) 0px, transparent 50%);
+radial-gradient(at 100% 0%, hsla(69,39%,28%,1) 0px, transparent 10%),
+radial-gradient(at 45% 100%, hsla(60,22%,13%,1) 0px, transparent 10%);
 background-size: cover;
 }
 
