@@ -4,7 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Tooltip } from "@mui/material";
 import { faEnvelopeCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import Typed from 'typed.js';
+import { useRef, useEffect } from "react";
+
 function Profile() {
+  const autoType = useRef(null);
   const socialAccounts = [
     {
       name: "LinkedIn",
@@ -29,6 +33,19 @@ function Profile() {
     window.open(account.url, "_blank");
   };
 
+  useEffect(() => {
+    const typed = new Typed(autoType.current, {
+      strings: ["Full Stack Web Developer.", "Cross-Platform App Developer.", "UI Designer."],
+      typeSpeed: 50,
+      backDelay: 1000,
+      showCursor: false,
+      loop: true
+    })
+    return () => {
+      typed.destroy();
+    };
+  }, [])
+
   return (
     <div className="profileCardContainer">
       <div className="profileCard">
@@ -39,7 +56,7 @@ function Profile() {
           <p>
             Hi, I'm <span className="highlight">Aditya Kadam</span>
           </p>
-          <p>Full Stack Developer.</p>
+          <p className="autoType" ref={autoType}>Full Stack Developer.</p>
         </div>
         <p className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugiat

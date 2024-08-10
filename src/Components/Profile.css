@@ -23,19 +23,23 @@
 }
 
 .profileHeader {
-  margin: 20px 0px;
+  margin-top: 10px;
   color: var(--color-font);
   font-weight: bold;
-  font-size: min(calc(1vw + 1.3rem), 2rem);
+  font-size: min(calc(1vw + 1.3rem), 1.7rem);
 }
 
-.profileHeader :nth-child(2) {
-  /* font-size: calc(1.8rem); */
-  font-size: min(calc(1vw + 1rem), 1.8rem);
+.autoType {
+  font-size: min(calc(1vw + 1rem), 1.4rem);
 }
 
 .highlight {
   color: var(--color-focus);
+}
+
+.autoType {
+  min-height: 45px;
+  color: rgb(144, 144, 144);
 }
 
 .profileCard .description {
