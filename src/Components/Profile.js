@@ -59,8 +59,7 @@ function Profile() {
           <p className="autoType" ref={autoType}>Full Stack Developer.</p>
         </div>
         <p className="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugiat
-          ipsa impedit tempora est error, dignissimos ut rem laudantium ipsum.
+        Let’s stay connected :)
         </p>
         <div className="buttonsContainer flex">
           {socialAccounts.map((account, index) => (

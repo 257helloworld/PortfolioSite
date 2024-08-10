@@ -12,6 +12,7 @@
   padding: 30px 40px;
   text-align: left;
   max-width: 850px;
+  background-color: #12121267;
 }
 
 .card p:nth-child(1) {

@@ -4,12 +4,8 @@ function AboutCard() {
   return (
     <div className="content card">
       <p>About Me</p>
-      <p style={{ lineHeight: "1.5" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis
-        velit eligendi iste saepe, libero, quia voluptatem odio ex recusandae
-        dolorum ab architecto minima quae laudantium sequi sint expedita!
-        Quibusdam qui praesentium tempore beatae nam blanditiis quaerat
-        necessitatibus et animi?
+      <p style={{ lineHeight: "1.7" }}>
+      Hello! I’m a full-stack web and cross-platform app developer skilled in ReactJs, Ionic, Flask, and Firebase. I’m passionate about crafting user-centric applications and excited about the possibilities of web3 technologies in transforming digital experiences.
       </p>
     </div>
   );

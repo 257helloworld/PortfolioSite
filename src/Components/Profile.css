@@ -13,6 +13,7 @@
 .profileCard {
   margin-right: 50px;
   max-width: 75%;
+  min-width: 450px;
 }
 
 .profileCircle img {
@@ -20,6 +21,7 @@
   height: 140px;
   border-radius: 50%;
   border: 1px solid white;
+  transform: rotate(-2deg);
 }
 
 .profileHeader {
@@ -44,7 +46,7 @@
 
 .profileCard .description {
   color: var(--color-font);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .ctaButton {
