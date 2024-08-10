@@ -17,6 +17,7 @@
   height: 60px;
   cursor: pointer;
   border: 2px solid transparent;
+  box-shadow: var(--light-shadow);
 }
 
 .skillIconContainer:hover {

@@ -1,0 +1,44 @@
+label {
+    display: block;
+    margin: 15px 0 10px 0;
+    font-size: 14px;
+}
+
+.txtInput {
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: #222222;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+span {
+    color: red;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 350px;
+}
+
+.btnMessage {
+    background-color: rgb(30, 30, 30);
+    padding: 8px 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 150ms ease-in-out;
+    /* transition: color 150ms ease-in-out; */
+    box-shadow: var(--light-shadow);
+}
+
+.btnMessage:hover {
+    background-color: var(--color-focus);
+    color: #121212;
+}
+
+.btnIcon {
+    margin-right: 10px;
+}

@@ -3,6 +3,7 @@ import AboutCard from "./Cards/AboutCard";
 import "./Content.css";
 import SkillsCard from "./Cards/SkillsCard";
 import ProjectsCard from "./Cards/ProjectsCard";
+import ContactCard from "./Cards/ContactCard";
 
 function Content() {
   return (
@@ -10,6 +11,7 @@ function Content() {
       <AboutCard />
       <SkillsCard />
       <ProjectsCard />
+      <ContactCard/>
     </div>
   );
 }
