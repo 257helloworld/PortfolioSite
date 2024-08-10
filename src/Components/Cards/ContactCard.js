@@ -12,7 +12,7 @@ function ContactCard() {
         <>
         <div className="card content">
             <p>Leave a Message</p>
-            <form name="messages" data-netlify="true" onSubmit={handleSubmit}>
+            <form name="messages" data-netlify="true" onSubmit={"submit"} method="post">
 
             <label htmlFor="name">Your Name<span>*</span></label>
             <input type="text" name="name" className="txtInput" placeholder="Name"/>
