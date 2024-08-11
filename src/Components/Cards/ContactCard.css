@@ -34,9 +34,13 @@ textarea {
     box-shadow: var(--light-shadow);
 }
 
-.btnMessage:hover {
+.btnMessage:enabled:hover {
     background-color: var(--color-focus);
     color: #121212;
+}
+
+.btnMessage:disabled {
+    color: #333333;
 }
 
 .btnIcon {
