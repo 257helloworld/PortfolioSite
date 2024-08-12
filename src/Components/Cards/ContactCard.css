@@ -14,7 +14,7 @@ label {
     font-size: 16px;
 }
 
-span {
+.mandatoryStar {
     color: red;
 }
 
@@ -24,6 +24,7 @@ textarea {
 }
 
 .btnMessage {
+    display: flex;
     background-color: rgb(30, 30, 30);
     padding: 8px 15px;
     margin-top: 20px;
@@ -34,6 +35,20 @@ textarea {
     box-shadow: var(--light-shadow);
 }
 
+.spinner {
+    border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #2f2f2f;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 500ms linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 .btnMessage:enabled:hover {
     background-color: var(--color-focus);
     color: #121212;
@@ -43,6 +58,10 @@ textarea {
     color: #333333;
 }
 
+.submitBtnText {
+    margin-left: 10px;
+}
+
 .btnIcon {
-    margin-right: 10px;
+    margin: auto;
 }
