@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -6,8 +6,10 @@ import { Tooltip } from "@mui/material";
 import { faEnvelopeCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import Typed from 'typed.js';
 import { useRef, useEffect } from "react";
+import Skeleton from '@mui/material/Skeleton';
 
 function Profile() {
+  const [isProfileLoaded, setIsProfileLoaded] = useState(false)
   const autoType = useRef(null);
   const socialAccounts = [
     {
@@ -41,6 +43,9 @@ function Profile() {
       showCursor: false,
       loop: true
     })
+    setTimeout(() => {
+      setIsProfileLoaded(true)
+    }, 2000);
     return () => {
       typed.destroy();
     };
@@ -50,8 +55,15 @@ function Profile() {
     <div className="profileCardContainer">
       <div className="profileCard">
         <div className="profileCircle">
-          <img src="profile_picture.jpeg"></img>
+          {isProfileLoaded ? (
+
+            <img src={`./profile_picture.jpeg`}></img>
+          ) : (
+
+          <Skeleton animation="wave" className="loadingSkeleton" variant="circular" height={140} width={140} sx={{ bgcolor: 'grey.900' }}/>
+          )}
         </div>
+
         <div className="profileHeader">
           <p>
             Hi, I'm <span className="highlight">Aditya Kadam</span>
