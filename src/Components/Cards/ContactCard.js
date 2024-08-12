@@ -47,13 +47,17 @@ function ContactCard() {
                 name: nameInputRef.current.value,
                 email: emailInputRef.current.value,
                 message: messageInputRef.current.value
-              });
+              })
               setAlertInfo(successMessage)
               setTimeout(() => {
-                    setIsSubmitLoading(false)
-                    setSubmitBtnText("Send Message")
-                    setSubmitEnabled(true)
-                }, 2000);
+                  setIsSubmitLoading(false)
+                  setSubmitBtnText("Send Message")
+                  setSubmitEnabled(true)
+                  setOpen(true)
+                  nameInputRef.current.value = ""
+                  emailInputRef.current.value = ""
+                  messageInputRef.current.value = ""
+            }, 2000);
               
         } catch (err) {
             setAlertInfo({
