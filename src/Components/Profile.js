@@ -11,6 +11,11 @@ import Skeleton from '@mui/material/Skeleton';
 function Profile() {
   const [isProfileLoaded, setIsProfileLoaded] = useState(false)
   const autoType = useRef(null);
+  const profileImg = useRef(null);
+  const profileSkeleton = useRef(null)
+
+  const profilePictureUrl = "https://firebasestorage.googleapis.com/v0/b/aditya-portfolio-site.appspot.com/o/profile_picture.jpeg?alt=media&token=b017ba0d-8927-46df-9488-7da95246ca15";
+
   const socialAccounts = [
     {
       name: "LinkedIn",
@@ -43,25 +48,23 @@ function Profile() {
       showCursor: false,
       loop: true
     })
-    setTimeout(() => {
-      setIsProfileLoaded(true)
-    }, 2000);
+
     return () => {
       typed.destroy();
     };
   }, [])
 
+  const hideSkeleton = () => {
+    profileSkeleton.current.style.display = "none";
+    profileImg.current.style.display = "flex"
+  }
+
   return (
     <div className="profileCardContainer">
       <div className="profileCard">
         <div className="profileCircle">
-          {isProfileLoaded ? (
-
-            <img src={`./profile_picture.jpeg`}></img>
-          ) : (
-
-          <Skeleton animation="wave" className="loadingSkeleton" variant="circular" height={140} width={140} sx={{ bgcolor: 'grey.900' }}/>
-          )}
+            <img ref={profileImg} style={{display: "none"}} onLoad={hideSkeleton} src={profilePictureUrl}></img>
+          <Skeleton ref={profileSkeleton} animation="wave" className="loadingSkeleton" variant="circular" height={140} width={140} sx={{ bgcolor: 'grey.900' }}/>
         </div>
 
         <div className="profileHeader">
